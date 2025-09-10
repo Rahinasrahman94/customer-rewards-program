@@ -1,20 +1,23 @@
 package model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 public class Transaction {
     private Long Id;
     private Long customer_id;
     private Double amount;
-    private LocalDateTime localDateTime ;
 
-    public LocalDateTime getLocalDateTime() {
-        return localDateTime;
+    public LocalDate getLocalDate() {
+        return localDate;
     }
 
-    public void setLocalDateTime(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
     }
+
+    private LocalDate localDate;
+
 
     public Double getAmount() {
         return amount;
