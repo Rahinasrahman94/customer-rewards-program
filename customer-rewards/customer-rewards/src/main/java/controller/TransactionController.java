@@ -14,6 +14,7 @@ public class TransactionController {
     @Autowired
     private TransactionService transactionService;
 
+
     @PostMapping("/calculateRewards")
     public Map<Long, Integer> calculateRewards(@RequestBody List<Transaction> alltransaction) {
 
