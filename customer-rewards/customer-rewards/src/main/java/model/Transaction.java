@@ -4,12 +4,13 @@ import java.time.LocalDate;
 
 
 public class Transaction {
-    private Long Id;
+
     private Long customer_id;
     private Double amount;
+    private LocalDate localDate;
 
-    public Transaction(Long id, Long customer_id, Double amount, LocalDate localDate) {
-        Id = id;
+    public Transaction( Long customer_id, Double amount, LocalDate localDate) {
+
         this.customer_id = customer_id;
         this.amount = amount;
         this.localDate = localDate;
@@ -23,7 +24,7 @@ public class Transaction {
         this.localDate = localDate;
     }
 
-    private LocalDate localDate;
+
 
 
     public Double getAmount() {
@@ -41,14 +42,4 @@ public class Transaction {
     public void setCustomer_id(Long customer_id) {
         this.customer_id = customer_id;
     }
-
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
-    }
-
-
 }

@@ -16,7 +16,7 @@ public class TransactionController {
 
 
     @PostMapping("/calculateRewards")
-    public Map<Long, Integer> calculateRewards(@RequestBody List<Transaction> alltransaction) {
+    public Map<Long, Map<String,Integer>> calculateRewards(@RequestBody List<Transaction> alltransaction) {
 
         return transactionService.calculateRewards(alltransaction);
     }
